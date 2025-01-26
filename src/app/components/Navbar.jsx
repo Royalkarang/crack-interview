@@ -13,14 +13,11 @@ export default function Navbar() {
   const router = useRouter();
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const [searchQuery, setSearchQuery] = useState("");
   const [filteredQuestions, setFilteredQuestions] = useState([]);
 
   // Handle search input change
   const handleSearchChange = (event) => {
     const query = event.target.value;
-    setSearchQuery(query);
-
     // Filter the questions based on the query
     if (query) {
       const filtered = questionsData.filter((item) =>
@@ -33,7 +30,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-black text-white shadow-lg sticky top-0 z-50 min-h-[5vh]">
+    <header className="bg-black text-white shadow-lg sticky top-0 z-50 shadow-gray-900">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <div className="text-2xl font-bold cursor-pointer hover:text-gray-400"
@@ -49,8 +46,14 @@ export default function Navbar() {
           <Link href={"/react"} className="cursor-pointer hover:text-gray-400 transition" >
             React
           </Link>
-          <Link href={"/"} className="cursor-pointer hover:text-gray-400 transition" >
-            Services
+          <Link href={"/node"} className="cursor-pointer hover:text-gray-400 transition" >
+            Node
+          </Link>
+          <Link href={"/next"} className="cursor-pointer hover:text-gray-400 transition" >
+            Next js
+          </Link>
+          <Link href={"/contact"} className="cursor-pointer hover:text-gray-400 transition" >
+            Contact us
           </Link>
         </nav>
 
@@ -86,10 +89,10 @@ export default function Navbar() {
       {isOpen && (
         <nav className="lg:hidden text-white p-4">
           <ul className="space-y-4 text-center">
-            <li onClick={() => router.push("/")}>Home</li>
-            <li onClick={() => router.push("/about")}>About</li>
-            <li onClick={() => router.push("/services")}>Services</li>
-            <li onClick={() => router.push("/blog")}>Blog</li>
+            <li onClick={() => router.push("/javascript")}>JavaScript</li>
+            <li onClick={() => router.push("/react")}>React</li>
+            <li onClick={() => router.push("/node")}>Node</li>
+            <li onClick={() => router.push("/next")}>Next js</li>
             <li onClick={() => router.push("/contact")}>Contact</li>
           </ul>
         </nav>

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "question": "What is difference between document.getElementById() and document.querySelector()?",
+        "answer": "document.getElementById() is used to select an element by its ID and only works for IDs, while document.querySelector() is more versatile, allowing selection of elements using CSS selectors like classes, IDs, attributes, or tags. querySelector() returns the first matching element."
+    },
+    {
+        "id": 2,
+        "question": "When to use reduce(), map(), foreach() and filter() in JavaScript?",
+        "answer": "reduce() is used to accumulate a single value by iterating through an array. map() creates a new array by transforming each element. forEach() is used to perform side-effects on each element without returning a new array. filter() creates a new array with elements that pass a given condition."
+    },
+    {
+        "id": 3,
+        "question": "What is Hoisting in JavaScript?",
+        "answer": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope before code execution. This means you can use variables and functions before declaring them. However, let and const declarations are hoisted but are not initialized, resulting in a temporal dead zone."
+    },
+    {
+        "id": 4,
+        "question": "What are closures?",
+        "answer": "Closures are functions that remember their lexical scope even when executed outside of that scope. They allow a function to access variables from its outer scope even after the outer function has returned."
+    },
+    {
+        "id": 5,
+        "question": "How do you clone an object in JavaScript?",
+        "answer": "You can clone an object using methods like Object.assign({}, obj), JSON.parse(JSON.stringify(obj)) for deep cloning, or structuredClone(obj). Shallow cloning can also be done with the spread operator {...obj}."
+    },
+    {
+        "id": 6,
+        "question": "What are the possible ways to create objects in JavaScript?",
+        "answer": "Objects can be created using object literals ({}), the Object.create() method, constructor functions, ES6 classes, and the new keyword with a constructor like new Object()."
+    },
+    {
+        "id": 7,
+        "question": "What are the JavaScript data types?",
+        "answer": "JavaScript data types are: Primitive types (String, Number, BigInt, Boolean, Undefined, Null, Symbol) and Non-Primitive types (Object, Array, Function, Date)."
+    },
+    {
+        "id": 8,
+        "question": "What are global variables?",
+        "answer": "Global variables are variables that are declared outside of any function and can be accessed from any scope within the program. They should be used cautiously to avoid conflicts in larger applications."
+    },
+    {
+        "id": 9,
+        "question": "What is variable shadowing in JavaScript?",
+        "answer": "Variable shadowing occurs when a variable declared within a certain scope has the same name as a variable in an outer scope, effectively 'shadowing' the outer variable."
+    },
+    {
+        "id": 10,
+        "question": "What is an event flow?",
+        "answer": "Event flow describes the order in which events are received on an element and its ancestors in the DOM. It consists of three phases: capturing phase, target phase, and bubbling phase."
+    },
+    {
+        "id": 11,
+        "question": "What is event bubbling?",
+        "answer": "Event bubbling is the phase in the event flow where an event propagates from the target element to its ancestors, allowing handlers on parent elements to catch the event."
+    },
+    {
+        "id": 12,
+        "question": "What is event capturing?",
+        "answer": "Event capturing, also known as the capture phase, is the phase where an event propagates from the top of the DOM tree down to the target element before the event is handled."
+    },
+    {
+        "id": 13,
+        "question": "What is prototype chain?",
+        "answer": "The prototype chain is the mechanism by which JavaScript objects inherit properties and methods from other objects. It is a chain of references to prototypes until reaching null, which is the end of the chain."
+    },
+    {
+        "id": 14,
+        "question": "What is the difference between Call, Apply and Bind?",
+        "answer": "Call invokes a function with a specific 'this' value and arguments provided individually. Apply is similar but takes arguments as an array. Bind creates a new function with a bound 'this' value and arguments, which can be called later."
+    },
+    {
+        "id": 15,
+        "question": "What is the difference between == and === operators?",
+        "answer": "== checks for value equality with type coercion, while === checks for both value and type equality, making it more strict."
+    },
+    {
+        "id": 16,
+        "question": "What is a first class function?",
+        "answer": "A first-class function is a function that can be treated like any other value in JavaScript, meaning it can be assigned to a variable, passed as an argument, or returned from another function."
+    },
+    {
+        "id": 17,
+        "question": "What is a higher order function?",
+        "answer": "A higher-order function is a function that can take other functions as arguments or return functions as its result."
+    },
+    {
+        "id": 18,
+        "question": "What is a unary function?",
+        "answer": "A unary function is a function that takes exactly one argument."
+    },
+    {
+        "id": 19,
+        "question": "What is currying function?",
+        "answer": "Currying is a technique in which a function is transformed into a series of functions, each taking a single argument, allowing partial application of arguments."
+    },
+    {
+        "id": 20,
+        "question": "What is a pure function?",
+        "answer": "A pure function is a function that always produces the same output for the same input and has no side effects, making it predictable and easier to test."
+    }
+]
